@@ -1,6 +1,6 @@
 import Mathlib
-import LeanCopilot
-import Aesop
+--import LeanCopilot
+--import Aesop
 
 set_option maxHeartbeats 0
 set_option maxRecDepth 1000000000
