@@ -38,8 +38,8 @@ example (n : ℕ ) : 3 ∣ n ^ 3 - n := by
     obtain ⟨k, hk⟩ := h2
     use m + m ^ 2 + k
     ring_nf
-    rw [Nat.mul_comm k 3, ←hk]
-    sorry
+    rw [Nat.mul_comm k 3, ←hk, Nat.sub_add_eq]
+    ring_nf
   induction n with
   | zero => simp [Nat.zero_eq, zero_add, forall_const]
   | succ n ih => exact h n ih
