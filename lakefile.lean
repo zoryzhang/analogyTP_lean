@@ -11,4 +11,4 @@ lean_lib «examples» {
 }
 
 require mathlib from git
-    "https://github.com/leanprover-community/mathlib4"
+    "https://github.com/leanprover-community/mathlib4" @ "v4.6.0-rc1"
